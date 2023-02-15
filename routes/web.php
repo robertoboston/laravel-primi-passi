@@ -32,3 +32,11 @@ Route::get('/about-us',function(){
     return view ('about_us');
 
 })->name('/ciccio');
+
+Route::get('/contatti',function(){
+
+    $welcome = 'Benvenuto, questa è la tua pagina dei contatti';
+
+    return view('/contatti', compact('welcome'));
+
+})->name('/contacts');
