@@ -31,4 +31,4 @@ Route::get('/about-us',function(){
 
     return view ('about_us');
 
-});
+})->name('/ciccio');

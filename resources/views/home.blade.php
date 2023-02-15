@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <a href="/about-us">ciao nuovo utente</a>
+    <a href="{{route('/ciccio')}}">ciao nuovo utente</a>
 
     <h1>{{$name}}</h1>
     <h1>{{$surname}}</h1>
