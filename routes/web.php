@@ -22,16 +22,15 @@ Route::get('/', function () {
 
     ];
 
-
-    return view('home',$data);
+    return view('home',compact('data'));
+    
 });
-
 
 Route::get('/about-us',function(){
 
     return view ('about_us');
 
-})->name('/ciccio');
+})->name('ciccio');
 
 Route::get('/contatti',function(){
 
@@ -39,4 +38,4 @@ Route::get('/contatti',function(){
 
     return view('/contatti', compact('welcome'));
 
-})->name('/contacts');
+})->name('contacts');
